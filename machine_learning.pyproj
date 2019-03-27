@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9e204c37-69f6-4c0e-bba0-74071d0550e5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Chapter3\preprocessing_scaling.py</StartupFile>
+    <StartupFile>Chapter3\test.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -28,7 +28,7 @@
     <Folder Include="Chapter3\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter3\preprocessing_scaling.py">
+    <Compile Include="Chapter3\test.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
