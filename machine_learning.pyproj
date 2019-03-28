@@ -28,6 +28,7 @@
     <Folder Include="Chapter3\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter3\effect_of_preprocessing.py" />
     <Compile Include="Chapter3\preprocessing_scaling.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
