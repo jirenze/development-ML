@@ -13,3 +13,4 @@ import mglearn
 import sklearn
 import warnings
 warnings.filterwarnings("ignore")
+mglearn.plots.plot_scaling()
