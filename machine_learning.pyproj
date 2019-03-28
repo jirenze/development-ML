@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9e204c37-69f6-4c0e-bba0-74071d0550e5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Chapter3\preprocessing_scaling.py</StartupFile>
+    <StartupFile>Chapter3\principal_component_analysis.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -30,6 +30,9 @@
   <ItemGroup>
     <Compile Include="Chapter3\effect_of_preprocessing.py" />
     <Compile Include="Chapter3\preprocessing_scaling.py" />
+    <Compile Include="Chapter3\principal_component_analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
