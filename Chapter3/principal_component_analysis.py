@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thur Mar.20 2019
+Created on Thur Mar.28 2019
 
 @author: jirenze
 """
@@ -39,6 +39,7 @@ cancer = load_breast_cancer()
 #ax[0].legend(["malignant", "bengin"], loc = "best")
 #fig.tight_layout()
 
+
 scaler_std = StandardScaler()
 X_scaled_std = scaler_std.fit_transform(cancer.data)
 
@@ -51,10 +52,20 @@ print("original shape: {}".format(str(X_scaled_std.shape)))
 print("reduced shape: {}".format(str(X_pca.shape)))
 
 # plot first vs. second prinicipal component, colored by class
-plt.figure(figsize = (8, 8))
-mglearn.discrete_scatter(X_pca[:, 0], X_pca[:, 1], cancer.target)
-plt.legend(cancer.target_names, loc = "best")
-plt.gca().set_aspect("equal")
-plt.xlabel("first principal component")
-plt.ylabel("second principal component")
+#plt.figure(figsize = (8, 8))
+#mglearn.discrete_scatter(X_pca[:, 0], X_pca[:, 1], cancer.target)
+#plt.legend(cancer.target_names, loc = "best")
+#plt.gca().set_aspect("equal")
+#plt.xlabel("first principal component")
+#plt.ylabel("second principal component")
+
+
+print("PCA component shape: {}".format(pca.components_.shape))
+print("PCA component {}".format(pca.components_))
+plt.matshow(pca.components_, cmap = "viridis")
+plt.yticks([0, 1], ["first component", "second component"])
+plt.colorbar()
+plt.xticks(range(len(cancer.feature_names)), cancer.feature_names, rotation = 60, ha = "left")
+plt.xlabel("feature")
+plt.ylabel("principal components")
 plt.show()
