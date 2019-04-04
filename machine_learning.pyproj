@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9e204c37-69f6-4c0e-bba0-74071d0550e5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Chapter3\Eignfaces_for_feature_extraction.py</StartupFile>
+    <StartupFile>Chapter5\GridSearch.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -26,6 +26,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Chapter3\" />
+    <Folder Include="Chapter4\" />
+    <Folder Include="Chapter5\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter3\effect_of_preprocessing.py" />
@@ -34,6 +36,12 @@
     </Compile>
     <Compile Include="Chapter3\preprocessing_scaling.py" />
     <Compile Include="Chapter3\principal_component_analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chapter4\Binning.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chapter5\GridSearch.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
